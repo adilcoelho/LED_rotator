@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ex2
-Sun May 12 22:23:33 2019
+Fri May 17 16:52:35 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 12 22:23:33 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri May 17 16:52:35 2019 ;
 ; Revision Name             ; ex2                                   ;
 ; Top-level Entity Name     ; ex2                                   ;
 ; Family                    ; Cyclone III                           ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                       ;
-+--------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                  ;
-+--------------------------------------------------------------------------------------------------+
-; C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim//ex2.vo ;
-+--------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; Simulation Generated Files                                    ;
++---------------------------------------------------------------+
+; Generated Files                                               ;
++---------------------------------------------------------------+
+; H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim//ex2.vo ;
++---------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Sun May 12 22:23:32 2019
-Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim/ ex2 -c ex2
+    Info: Processing started: Fri May 17 16:52:34 2019
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim/ ex2 -c ex2
 Info (119006): Selected device EP3C16F484C6 for design "ex2"
-Info (204019): Generated file ex2.vo in folder "C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ex2.vo in folder "H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4560 megabytes
-    Info: Processing ended: Sun May 12 22:23:33 2019
+    Info: Peak virtual memory: 4558 megabytes
+    Info: Processing ended: Fri May 17 16:52:35 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

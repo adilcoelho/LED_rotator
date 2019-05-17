@@ -3,108 +3,72 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.461
-TNS   : -343.841
-
-Type  : Slow 1200mV 85C Model Setup 'debounce:debounce_rabo|debounced_out'
-Slack : -2.600
-TNS   : -78.690
+Slack : -2.789
+TNS   : -166.994
 
 Type  : Slow 1200mV 85C Model Setup 'debounce:debounce_reverse|debounced_out'
 Slack : 0.318
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.519
-TNS   : -0.730
+Slack : -0.044
+TNS   : -0.044
 
 Type  : Slow 1200mV 85C Model Hold 'debounce:debounce_reverse|debounced_out'
 Slack : 0.385
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'debounce:debounce_rabo|debounced_out'
-Slack : 0.493
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -111.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:debounce_rabo|debounced_out'
-Slack : -1.000
-TNS   : -32.000
+TNS   : -72.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
 Slack : -1.000
 TNS   : -1.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.856
-TNS   : -298.940
-
-Type  : Slow 1200mV 0C Model Setup 'debounce:debounce_rabo|debounced_out'
-Slack : -2.225
-TNS   : -67.293
+Slack : -2.445
+TNS   : -145.027
 
 Type  : Slow 1200mV 0C Model Setup 'debounce:debounce_reverse|debounced_out'
 Slack : 0.398
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.454
-TNS   : -0.639
+Slack : -0.040
+TNS   : -0.040
 
 Type  : Slow 1200mV 0C Model Hold 'debounce:debounce_reverse|debounced_out'
 Slack : 0.341
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'debounce:debounce_rabo|debounced_out'
-Slack : 0.437
-TNS   : 0.000
-
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -111.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_rabo|debounced_out'
-Slack : -1.000
-TNS   : -32.000
+TNS   : -72.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
 Slack : -1.000
 TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -2.159
-TNS   : -141.958
-
-Type  : Fast 1200mV 0C Model Setup 'debounce:debounce_rabo|debounced_out'
-Slack : -1.048
-TNS   : -30.710
+Slack : -1.132
+TNS   : -61.357
 
 Type  : Fast 1200mV 0C Model Setup 'debounce:debounce_reverse|debounced_out'
 Slack : 0.626
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.372
-TNS   : -0.587
+Slack : -0.092
+TNS   : -0.092
 
 Type  : Fast 1200mV 0C Model Hold 'debounce:debounce_reverse|debounced_out'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'debounce:debounce_rabo|debounced_out'
-Slack : 0.268
-TNS   : 0.000
-
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -117.722
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_rabo|debounced_out'
-Slack : -1.000
-TNS   : -32.000
+TNS   : -76.230
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
 Slack : -1.000

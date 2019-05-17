@@ -1,15 +1,9 @@
 |ex2
 clk => debounce:debounce_reverse.clk
-clk => led_out[0].CLK
-clk => led_out[1].CLK
-clk => led_out[2].CLK
-clk => led_out[3].CLK
-clk => led_out[4].CLK
-clk => led_out[5].CLK
-clk => led_out[6].CLK
-clk => led_out[7].CLK
-clk => led_out[8].CLK
-clk => led_out[9].CLK
+clk => posicao[0].CLK
+clk => posicao[1].CLK
+clk => posicao[2].CLK
+clk => posicao[3].CLK
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => counter[2].CLK
@@ -42,24 +36,38 @@ clk => counter[28].CLK
 clk => counter[29].CLK
 clk => counter[30].CLK
 clk => counter[31].CLK
-clk => debounce:debounce_rabo.clk
-clk => debounce:debounce_rastro.clk
+clk => vetor_leds[0].CLK
+clk => vetor_leds[1].CLK
+clk => vetor_leds[2].CLK
+clk => vetor_leds[3].CLK
+clk => vetor_leds[4].CLK
+clk => vetor_leds[5].CLK
+clk => vetor_leds[6].CLK
+clk => vetor_leds[7].CLK
+clk => vetor_leds[8].CLK
+clk => vetor_leds[9].CLK
+clk => tamanho_rabo[0].CLK
+clk => tamanho_rabo[1].CLK
+clk => tamanho_rabo[2].CLK
+clk => tamanho_rabo[3].CLK
+clk => debounce:debounce_rabomais.clk
+clk => debounce:debounce_rabomenos.clk
 speed[0] => ~NO_FANOUT~
 speed[1] => ~NO_FANOUT~
 speed[2] => ~NO_FANOUT~
 reverse => debounce:debounce_reverse.button
-tail_size_control[0] => debounce:debounce_rastro.button
-tail_size_control[1] => debounce:debounce_rabo.button
-led[0] <= led_out[0].DB_MAX_OUTPUT_PORT_TYPE
-led[1] <= led_out[1].DB_MAX_OUTPUT_PORT_TYPE
-led[2] <= led_out[2].DB_MAX_OUTPUT_PORT_TYPE
-led[3] <= led_out[3].DB_MAX_OUTPUT_PORT_TYPE
-led[4] <= led_out[4].DB_MAX_OUTPUT_PORT_TYPE
-led[5] <= led_out[5].DB_MAX_OUTPUT_PORT_TYPE
-led[6] <= led_out[6].DB_MAX_OUTPUT_PORT_TYPE
-led[7] <= led_out[7].DB_MAX_OUTPUT_PORT_TYPE
-led[8] <= led_out[8].DB_MAX_OUTPUT_PORT_TYPE
-led[9] <= led_out[9].DB_MAX_OUTPUT_PORT_TYPE
+tail_size_control[0] => debounce:debounce_rabomenos.button
+tail_size_control[1] => debounce:debounce_rabomais.button
+led[0] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[8] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
+led[9] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ex2|debounce:debounce_reverse
@@ -132,7 +140,7 @@ clk => counter[31].CLK
 debounced_out <= debounced_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ex2|debounce:debounce_rabo
+|ex2|debounce:debounce_rabomais
 button => debounced_out~reg0.ACLR
 button => counter[0].ACLR
 button => counter[1].ACLR
@@ -202,7 +210,7 @@ clk => counter[31].CLK
 debounced_out <= debounced_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ex2|debounce:debounce_rastro
+|ex2|debounce:debounce_rabomenos
 button => debounced_out~reg0.ACLR
 button => counter[0].ACLR
 button => counter[1].ACLR

@@ -1,5 +1,5 @@
 Flow report for ex2
-Sun May 12 22:23:33 2019
+Fri May 17 16:52:35 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sun May 12 22:23:33 2019      ;
+; Flow Status                        ; Successful - Fri May 17 16:52:35 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ex2                                        ;
 ; Top-level Entity Name              ; ex2                                        ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 320                                        ;
-;     Total combinational functions  ; 320                                        ;
-;     Dedicated logic registers      ; 109                                        ;
-; Total registers                    ; 109                                        ;
+; Total logic elements               ; 245                                        ;
+;     Total combinational functions  ; 245                                        ;
+;     Dedicated logic registers      ; 150                                        ;
+; Total registers                    ; 150                                        ;
 ; Total pins                         ; 17                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -64,31 +64,35 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2019 22:23:19 ;
+; Start date & time ; 05/17/2019 16:52:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ex2                 ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                               ;
-+-------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                                                                     ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110073158969577.155771059919332                                                           ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                        ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                               ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                 ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                                                      ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                        ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                         ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                                                                  ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                     ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                    ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                              ; --            ; --          ; --             ;
-+-------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                            ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 31032335741009.155812274506640                         ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                     ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                              ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                   ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                               ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                  ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                 ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                           ; --            ; --          ; --             ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                                              ; VHDL_1993     ; --          ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                                    ; --            ; --          ; --             ;
++-------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -96,10 +100,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4668 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4560 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4560 MB             ; 00:00:01                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4672 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4558 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4558 MB             ; 00:00:01                           ;
+; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,9 +112,9 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-0OVLD98K  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-0OVLD98K  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-0OVLD98K  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-L7LJUV6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-L7LJUV6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-L7LJUV6  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -118,8 +122,8 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ex2 -c ex2
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ex2 -c ex2 --vector_source=C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/Waveform.vwf --testbench_file=C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/simulation/qsim/ ex2 -c ex2
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ex2 -c ex2 --vector_source=H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/Waveform.vwf --testbench_file=H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim/Waveform.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/simulation/qsim/ ex2 -c ex2
 
 
 

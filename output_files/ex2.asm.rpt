@@ -1,5 +1,5 @@
 Assembler report for ex2
-Sun May 12 22:18:05 2019
+Fri May 17 16:03:44 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/output_files/ex2.sof
+  5. Assembler Device Options: H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/output_files/ex2.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun May 12 22:18:05 2019 ;
+; Assembler Status      ; Successful - Fri May 17 16:03:44 2019 ;
 ; Revision Name         ; ex2                                   ;
 ; Top-level Entity Name ; ex2                                   ;
 ; Family                ; Cyclone III                           ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                     ;
-+-----------------------------------------------------------------------------------------------+
-; File Name                                                                                     ;
-+-----------------------------------------------------------------------------------------------+
-; C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/output_files/ex2.sof ;
-+-----------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Assembler Generated Files                                  ;
++------------------------------------------------------------+
+; File Name                                                  ;
++------------------------------------------------------------+
+; H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/output_files/ex2.sof ;
++------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Eduardo/Downloads/utfpr-8_periodo/logica_reconfiguravel/lab0805/output_files/ex2.sof ;
-+----------------+--------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                ;
-+----------------+--------------------------------------------------------------------------------------------------------+
-; Device         ; EP3C16F484C6                                                                                           ;
-; JTAG usercode  ; 0x00106131                                                                                             ;
-; Checksum       ; 0x00106131                                                                                             ;
-+----------------+--------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Device Options: H:/UTFPR/8Periodo/logRec/LABALGO/vhdl/output_files/ex2.sof ;
++----------------+---------------------------------------------------------------------+
+; Option         ; Setting                                                             ;
++----------------+---------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                        ;
+; JTAG usercode  ; 0x000D54A4                                                          ;
+; Checksum       ; 0x000D54A4                                                          ;
++----------------+---------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun May 12 22:18:03 2019
+    Info: Processing started: Fri May 17 16:03:41 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ex2 -c ex2
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4599 megabytes
-    Info: Processing ended: Sun May 12 22:18:05 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Fri May 17 16:03:44 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

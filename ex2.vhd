@@ -4,23 +4,24 @@ use ieee.numeric_std.all;
 
 ENTITY ex2 IS
 	GENERIC(
-				time_m : integer := 10000;
-				freq_clk: integer := 50
+				time_m : integer := 1;
+				freq_clk: integer := 1e3;
+				NLED: integer := 10
 	);
 	PORT(
 		  clk : IN STD_LOGIC;
 		  speed :  IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 		  reverse : IN STD_LOGIC;
 		  tail_size_control : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-		  led : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+		  led : OUT STD_LOGIC_VECTOR(NLED-1 DOWNTO 0)
 	);
 END ENTITY;
 
 ARCHITECTURE arch OF ex2 IS
 	COMPONENT debounce IS
 		GENERIC(
-				time_ms : integer := 100;
-				freq_clk: integer := 50e6	     
+				time_ms : integer := 1;
+				freq_clk: integer := 1e3	     
 		);
 		PORT(
   		  button : in std_logic;
@@ -29,52 +30,66 @@ ARCHITECTURE arch OF ex2 IS
 		);
 	END COMPONENT;
 	
-SIGNAL reverse_out, sentido, rabo, rastro: std_LOGIC;
+SIGNAL reverse_out, sentido, rabomais, rabomenos: std_LOGIC;
 SIGNAL N : integer;
 BEGIN
 	debounce_reverse : debounce port map(button => reverse, clk => clk, debounced_out => reverse_out);
-	debounce_rabo : debounce port map(button => tail_size_control(1), clk => clk, debounced_out => rabo);
-	debounce_rastro : debounce port map(button => tail_size_control(0), clk => clk, debounced_out => rastro);
+	debounce_rabomais : debounce port map(button => tail_size_control(1), clk => clk, debounced_out => rabomais); -- tail...(1) aumenta rabo
+	debounce_rabomenos : debounce port map(button => tail_size_control(0), clk => clk, debounced_out => rabomenos); -- tail...(0) diminui rabo
 	
 --MOVIMENTO DA TRILHA
-PROCESS(clk,reverse_out, rabo, rastro)
-	VARIABLE speed_count : integer := to_integer(unsigned'('0' & speed(0))) + to_integer(unsigned'('0' & speed(1))) + to_integer(unsigned'('0' & speed(2)));
+PROCESS(clk,reverse_out, rabomais, rabomenos)
+	VARIABLE speed_count : integer := to_integer(unsigned(speed));
 	VARIABLE counter_max: integer := (time_m/2*speed_count+2) * (freq_clk /1e3);
 	VARIABLE counter: integer := 0;
-	VARIABLE sentido: std_LOGIC := '0';
-	VARIABLE led_out : STD_LOGIC_VECTOR(9 DOWNTO 0):= "0000000001";
-	VARIABLE N : integer := 4;
+	VARIABLE sentido: STD_LOGIC := '0';
+	VARIABLE vetor_leds: UNSIGNED(NLED-1 downto 0) := (others => '0');
+	VARIABLE posicao : integer  range NLED-1 downto 0  := 0;
+	VARIABLE tamanho_rabo: integer range NLED - 2 downto 0 := 0;
 	BEGIN
 	IF rising_edge(reverse_out) THEN
 	  sentido := not(sentido);
 	END IF;
+
 	
-	IF clk'event and clk = '1' THEN
+	IF rising_edge(clk) THEN
+
+		IF rabomais = '1' THEN
+			IF tamanho_rabo < NLED-2 THEN
+				tamanho_rabo := tamanho_rabo + 1;
+			END IF;
+		END IF;
+
+		IF rabomenos = '1' THEN
+			IF tamanho_rabo > 0 THEN
+				tamanho_rabo := tamanho_rabo - 1;
+			END IF;
+		END IF;
+		
+		vetor_leds := (others => '0');
+		vetor_leds(tamanho_rabo downto 0) := (others => '1');
 		IF counter < counter_max THEN
 			counter := counter + 1;	
 		ELSE
 			counter := 0;
-			IF sentido = '0' THEN
-					If led_out(N) = '1' THEN
-						led_out(N downto 1) := led_out(N-1 downto 0);
-						led_out(0) := '1';
+			IF sentido = '0' THEN -- sentido 0: antihorario, 1: horario num vetor de leds dobrado com os lados pra baixo
+					
+					IF posicao = NLED-1 THEN
+						posicao := 0;
 					ELSE
-						led_out(N downto 1) := led_out(N-1 downto 0);
-						led_out(0) := '0';
+						posicao := posicao + 1;
 					END IF;
-				
 			ELSE
-					If led_out(0) = '1' THEN
-						led_out(N-1 downto 0) := led_out(N downto 1);
-						led_out(N) := '1';
-					ELSE
-						led_out(N-1 downto 0) :=  led_out(N downto 1);
-						led_out(N) :=  '0';
+					
+					IF posicao = 0 THEN
+						posicao := NLED-1;
+					else
+						posicao := posicao - 1;
 					END IF;
 			END IF;
 		END IF;
 	END IF;
-	led <= led_out;
+	led <= std_logic_vector(vetor_leds ROL posicao);
 END PROCESS;
 
 END ARCHITECTURE;
