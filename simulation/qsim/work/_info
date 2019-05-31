@@ -4,54 +4,54 @@ K3
 cModel Technology
 Z0 dC:\Users\Eduardo\Downloads\utfpr-8_periodo\logica_reconfiguravel\lab0805\simulation\qsim
 vex2
-Z1 I853;LB;=enQn^Wei;l:G]0
-Z2 VG?BcgQNK6ZVdi1kz^5Ca53
-Z3 dH:\UTFPR\8Periodo\logRec\LABALGO\vhdl\simulation\qsim
-Z4 w1558122755
-Z5 8ex2.vo
-Z6 Fex2.vo
+Z1 !s100 :oMfm[Kd6;K7:Tz<K2^VQ3
+Z2 I65DRBeEaPi4]N92m9[JiL2
+Z3 VGBWS@UcmD9B>lgYB3hNNA2
+Z4 dH:\UTFPR\8Periodo\logRec\LABALGO\vhdl\simulation\qsim
+Z5 w1559326017
+Z6 8ex2.vo
+Z7 Fex2.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|ex2.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|ex2.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 QUoPHBJRmaLnnDZFMKWon0
 !s85 0
-Z11 !s108 1558122756.679000
+Z11 !s108 1559326018.847000
 Z12 !s107 ex2.vo|
 !s101 -O0
 vex2_vlg_check_tst
 !i10b 1
-Z13 !s100 ^[e[<e^VFME;nb4^nbCM[0
-Z14 IgT6j_FM9cMgB:0`:KDbE@3
-Z15 V<5PNb1HdzOX0L`H`=Ij5T3
-R3
-Z16 w1558122753
-Z17 8Waveform.vwf.vt
-Z18 FWaveform.vwf.vt
-L0 63
-R7
+Z13 !s100 mMGZbVODZig>f:GkYUE_X1
+Z14 I:UZT8XTR6V[ZYTCT8^Uhl3
+Z15 V:@A9fObkODHW`Q5d=83HD1
+R4
+Z16 w1559326015
+Z17 8Waveform1.vwf.vt
+Z18 FWaveform1.vwf.vt
+L0 61
+R8
 r1
 !s85 0
 31
-Z19 !s108 1558122756.980000
-Z20 !s107 Waveform.vwf.vt|
-Z21 !s90 -work|work|Waveform.vwf.vt|
+Z19 !s108 1559326019.245000
+Z20 !s107 Waveform1.vwf.vt|
+Z21 !s90 -work|work|Waveform1.vwf.vt|
 !s101 -O0
-R9
+R10
 vex2_vlg_sample_tst
 !i10b 1
-Z22 !s100 ^beocF5XhWnn0=f5]=3XQ1
-Z23 IZOP9g[OmQ[S[oWE^lIY^?2
-Z24 V<z0]IZ:<BA]AW@Kfh:>j33
-R3
+Z22 !s100 nE@BD:a@iLmz4foVn3;h:2
+Z23 IKQi?2:Tc>R5Qm_i797iKi2
+Z24 VMliIjmP@[Bm9^jEoM8nNe0
+R4
 R16
 R17
 R18
 L0 29
-R7
+R8
 r1
 !s85 0
 31
@@ -59,18 +59,18 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10
 vex2_vlg_vec_tst
 !i10b 1
-Z25 !s100 5kKnR38U_jX:YZDKacZ>12
-Z26 IR0IfcI83nac;:8Y[;Q2?I3
-Z27 VWf=IGAO>_e37f]WQ`SFHA2
-R3
+!s100 Ii?XajN:oh_0:Y<:zcZh_0
+Ii;AO9k9M0hjB>TzTm<2j<3
+Z25 VWf=IGAO>_e37f]WQ`SFHA2
+R4
 R16
 R17
 R18
-Z28 L0 319
-R7
+Z26 L0 641
+R8
 r1
 !s85 0
 31
@@ -78,4 +78,4 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10

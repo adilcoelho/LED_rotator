@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="ex2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ex2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_khm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ex2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_bfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ex2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_ffh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

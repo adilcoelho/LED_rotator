@@ -14,22 +14,23 @@ ENTITY debounce IS
 END ENTITY;
 
 ARCHITECTURE arch OF debounce IS
+	CONSTANT counter_max: integer := time_ms * (freq_clk / 1e3);
 BEGIN
 
 	PROCESS (clk)
-	VARIABLE counter_max: integer := time_ms * (freq_clk / 1e3);
 	VARIABLE counter: integer := 0;
+	VARIABLE saida: std_logic := '0'; 
 	BEGIN
-		IF button = '0' THEN
+		IF button = saida THEN
 			counter := 0;
-			debounced_out <= '0';
 		ELSIF clk'event and clk = '1' THEN
 			IF counter < counter_max THEN
 				counter := counter + 1;
 			ELSE
-				debounced_out <= '1';
+				saida := not saida;
 			END IF;
 		END IF;
+		debounced_out <= saida;
 	END PROCESS;
 
 END ARCHITECTURE;

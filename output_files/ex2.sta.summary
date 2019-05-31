@@ -2,76 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.371
-TNS   : -374.948
+Type  : Slow 1200mV 85C Model Setup 'debounce:debounce_operation_0|saida'
+Slack : -5.081
+TNS   : -112.711
 
-Type  : Slow 1200mV 85C Model Setup 'debounce:debounce_reverse|debounced_out'
-Slack : 0.317
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.129
-TNS   : -0.129
-
-Type  : Slow 1200mV 85C Model Hold 'debounce:debounce_reverse|debounced_out'
-Slack : 0.384
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'debounce:debounce_operation_0|saida'
+Slack : -2.652
+TNS   : -80.575
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -153.000
+TNS   : -10.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -2.949
-TNS   : -323.485
-
-Type  : Slow 1200mV 0C Model Setup 'debounce:debounce_reverse|debounced_out'
-Slack : 0.398
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:debounce_operation_0|saida'
+Slack : 0.354
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.127
-TNS   : -0.127
+Type  : Slow 1200mV 0C Model Setup 'debounce:debounce_operation_0|saida'
+Slack : -4.387
+TNS   : -96.791
 
-Type  : Slow 1200mV 0C Model Hold 'debounce:debounce_reverse|debounced_out'
-Slack : 0.341
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Hold 'debounce:debounce_operation_0|saida'
+Slack : -2.386
+TNS   : -71.546
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -153.000
+TNS   : -10.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.389
-TNS   : -141.218
-
-Type  : Fast 1200mV 0C Model Setup 'debounce:debounce_reverse|debounced_out'
-Slack : 0.624
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_operation_0|saida'
+Slack : 0.442
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.169
-TNS   : -0.169
+Type  : Fast 1200mV 0C Model Setup 'debounce:debounce_operation_0|saida'
+Slack : -2.518
+TNS   : -49.589
 
-Type  : Fast 1200mV 0C Model Hold 'debounce:debounce_reverse|debounced_out'
-Slack : 0.206
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'debounce:debounce_operation_0|saida'
+Slack : -1.628
+TNS   : -49.306
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -162.936
+TNS   : -10.280
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_reverse|debounced_out'
-Slack : -1.000
-TNS   : -1.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:debounce_operation_0|saida'
+Slack : 0.266
+TNS   : 0.000
 
 ------------------------------------------------------------
